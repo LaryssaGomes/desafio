@@ -1,0 +1,149 @@
+.circle {
+  z-index: -10;
+  div {
+    position: absolute;
+  }
+
+  .circlePurple0 {
+    position: absolute;
+    top: -300px;
+    left: -200px;
+
+    width: 525px !important;
+    height: 525px;
+    background-color: var(--purple-800);
+    border-radius: 50%;
+  }
+
+  .circlePurple1 {
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    width: 30px !important;
+    height: 30px;
+
+    background-color: var(--purple-800);
+    border-radius: 50%;
+  }
+
+  .circlePurple2 {
+    position: absolute;
+    top: 400px;
+    left: 45px;
+    width: 40px !important;
+    height: 40px;
+
+    background-color: var(--purple-800);
+    border-radius: 50%;
+  }
+
+  .circleGreen0 {
+    position: absolute;
+    top: 550px;
+    left: 600px;
+    width: 35px !important;
+    height: 35px;
+
+    background-color: var(--green-400);
+    border-radius: 50%;
+  }
+
+  .circleGreen1 {
+    position: absolute;
+    top: 550px;
+    left: 1320px;
+    width: 80px !important;
+    height: 80px;
+
+    background-color: var(--green-400);
+    border-radius: 50%;
+  }
+
+  .circleOrange0 {
+    position: absolute;
+    top: 200px;
+    right: -50px;
+    width: 200px !important;
+    height: 200px;
+
+    background-color: var(--orange-500);
+    border-radius: 50%;
+  }
+  .circleOrange1 {
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    width: 100px !important;
+    height: 100px;
+
+    background-color: var(--orange-500);
+    border-radius: 50%;
+  }
+
+  .circleOrange2 {
+    position: absolute;
+    top: 1200px;
+    right: 50px;
+    width: 50px !important;
+    height: 50px;
+
+    background-color: var(--orange-500);
+    border-radius: 50%;
+  }
+
+  .circleGreen2 {
+    position: absolute;
+    top: 1500px;
+    left: 1350px;
+    width: 20px !important;
+    height: 20px;
+
+    background-color: var(--green-400);
+    border-radius: 50%;
+  }
+  .circlePurple3 {
+    position: absolute;
+    top: 1400px;
+    left: 100px;
+    width: 30px !important;
+    height: 30px;
+
+    background-color: var(--purple-800);
+    border-radius: 50%;
+  }
+
+  .circleGreen3 {
+    position: absolute;
+    left: 10px;
+    bottom: -1250px;
+    width: 200px !important;
+    height: 200px;
+
+    background-color: var(--green-400);
+    border-radius: 50%;
+  }
+
+  .circlePurple4 {
+    position: absolute;
+    top: 1600px;
+    right: 70px;
+    width: 15px !important;
+    height: 15px;
+
+    background-color: var(--purple-800);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 410px) {
+  .circle {
+    .circleGreen1 {
+      top: 3000px;
+      right: 20px;
+    }
+    .circleGreen2 {
+      top: 2000px;
+      right: 0px;
+    }
+  }
+}

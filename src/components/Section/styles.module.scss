@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+  div:first-child {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-family: "Righteous", cursive;
+      letter-spacing: 0.15rem;
+    }
+  }
+}

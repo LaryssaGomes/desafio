@@ -1,0 +1,77 @@
+$list-colors: var(--green-400), var(--purple-800), var(--orange-500);
+@function ftcolor() {
+  $cor: nth($list-colors, random(3));
+  @return $cor;
+}
+
+@mixin bgcolor() {
+  background: ftcolor();
+}
+.cardContainer {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .card:first-child .circle {
+    @include bgcolor();
+  }
+  .card:last-child .circle {
+    @include bgcolor();
+  }
+  .card {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden; //pesquisa
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transform: 0.5s;
+
+    .circle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      @include bgcolor();
+      clip-path: circle(150px at center 0); // pesquisa
+      text-align: center;
+
+      h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        padding: 50px 0;
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 180px;
+      page-break-after: 20px; //pesquisa
+      text-align: center;
+
+      p {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        color: #666;
+      }
+    }
+  }
+}
+
+.cardContainer:hover .card {
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: 0.3s all;
+}
+.cardContainer .card:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
