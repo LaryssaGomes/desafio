@@ -131,7 +131,37 @@
     border-radius: 50%;
   }
 }
+@media (max-width: 1024px) {
+  .circle {
+    .circleGreen1 {
+      top: 2200px;
+      left: 10px;
+    }
 
+    .circleGreen2 {
+      top: 2000px;
+      left: 400px;
+    }
+
+    .circleGreen3 {
+      top: 1600px;
+      right: 350px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .circle {
+    .circleGreen1 {
+      top: 3000px;
+      left: 10px;
+    }
+
+    .circleGreen2 {
+      top: 2600px;
+      left: 400px;
+    }
+  }
+}
 @media (max-width: 450px) {
   .circle {
     .circleGreen0 {
@@ -146,6 +176,11 @@
 
     .circleGreen2 {
       top: 2600px;
+      left: 300px;
+    }
+
+    .circleGreen3 {
+      top: 1600px;
       left: 400px;
     }
 
