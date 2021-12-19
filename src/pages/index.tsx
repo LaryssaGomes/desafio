@@ -1,10 +1,10 @@
 import Background from "../components/Background";
 import Card from "../components/Card";
-import Footer from "../components/Footer";
+
 import { ICard } from "../components/interfaces/ICard";
 import Main from "../components/Main";
 import Section from "../components/Section";
-const datas: ICard[] = [
+const datasSection1: ICard[] = [
   {
     id: 1,
     text: "Após seu primeiro login será redirecionado uma sequência de questões elas são importantes para que possamos indicar salas mais relevantes para o usuário.",
@@ -62,7 +62,7 @@ export default function Home() {
       <Background />
       <Main />
       <Section title="Tire suas dúvidas">
-        <Card datas={datas} />
+        <Card datas={datasSection1} />
       </Section>
       <Section
         title="
