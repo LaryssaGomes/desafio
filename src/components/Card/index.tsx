@@ -1,7 +1,9 @@
 import { ICard } from "../interfaces/ICard";
 import styles from "./styles.module.scss";
-
-export default function Card({ datas }: ICard[]) {
+interface CardProps {
+  datas: ICard[];
+}
+export default function Card({ datas }: CardProps) {
   return (
     <div className={styles.cardContainer}>
       {datas.map((data) => (
