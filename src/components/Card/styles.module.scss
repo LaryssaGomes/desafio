@@ -9,8 +9,7 @@ $list-colors: var(--green-400), var(--purple-800), var(--orange-500);
 }
 .cardContainer {
   position: relative;
-  width: 100%;
-
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
