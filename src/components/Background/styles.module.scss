@@ -1,8 +1,5 @@
 .circle {
   z-index: -10;
-  div {
-    position: absolute;
-  }
 
   .circlePurple0 {
     position: absolute;
@@ -135,15 +132,26 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 450px) {
   .circle {
+    .circleGreen0 {
+      top: 4000px;
+      left: 15px;
+    }
+
     .circleGreen1 {
       top: 3000px;
-      right: 20px;
+      left: 10px;
     }
+
     .circleGreen2 {
-      top: 2000px;
-      right: 0px;
+      top: 2600px;
+      left: 400px;
+    }
+
+    .circlePurple1 {
+      top: 1200px;
+      left: 300px;
     }
   }
 }
