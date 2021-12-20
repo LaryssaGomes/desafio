@@ -6,7 +6,10 @@
 body {
   background-color: var(--gray-900);
   color: var(--white);
+  max-width: 100%;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
 }
 
 body,
